@@ -6,8 +6,7 @@ def btnClick(numbers):
     operator= operator + str(numbers)
     text_input.set(operator)
 
-def btnClr():
-    global operator
+def btnClr(): 
     operator = ""
     text_input.set("")
 
@@ -26,7 +25,7 @@ operator=""
 cal.title("calculator")
 
 text_input=StringVar()
-textdisplay=Entry(cal,font=("arial",20,"bold"),textvariable=text_input,bd=30,insertwidth=3,bg="green",justify="right").grid(columnspan=4)
+textdisplay=Entry(cal,font=("arial",20,"bold"),textvariable=text_input,bd=30,insertwidth=3,bg="yellow",justify="right").grid(columnspan=4)
 
 button7=Button(cal, padx=16,pady=16,bd=8,fg="black",font=("arial",20, "bold"),text="7",command= lambda:btnClick(7))
 button7.grid(row=1,column=0)
